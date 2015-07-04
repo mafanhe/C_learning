@@ -1,4 +1,4 @@
-//guess number ganme
+//guess number game
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -12,7 +12,7 @@ int main(){
 	while(guess!=-1){
 		count++;
 		if(guess==num) {
-			printf("you got it use%d time\n",count);
+			printf("you got it use %d time\n",count);
 			break;
 		}
 		else if(guess>num) printf("sorry too big\n");
