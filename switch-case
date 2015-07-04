@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	int type;
+	scanf("%d",&type);
+	switch(type){
+		case 1:
+			printf("早上好\n");
+			break;
+		case 2:
+			printf("晚上还\n");
+			break;
+		default:
+			printf("你好\n");
+			break;
+	}
+	return 0;
+}
