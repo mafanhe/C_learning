@@ -24,7 +24,7 @@ int isWan(int num){
   if(num==sum)return 1;
   else return 0;
 }
-void Wan(int m,int n){
+void prtWan(int m,int n){
   int j=0;
   for(int i=m;i<=n;i++){
     if(isWan(i)){
@@ -41,7 +41,7 @@ int main(){
   //scanf("%d",&sum);
   //printf("%d",isWan(sum));
   scanf("%d %d",&m,&n );
-  Wan(m,n);
+  prtWan(m,n);
   return 0;
 }
 
