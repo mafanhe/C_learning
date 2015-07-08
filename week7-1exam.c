@@ -19,22 +19,22 @@ int main(){
 	const int number=10;
 	char str[number];
 	for (int i = 0; i < number; i++) {
-		str[i]='-';
+		str[i]=' ';
 	}
 	//定义i表示单词大小
 	int i=0;
 	//循环输入并计数
 	while(scanf("%s",str)){
 		i=0;
-		if(str[0]=='-')break;
+		if(str[0]=='.')break;
 		for(int j=0;j<number;j++){
-			if(str[j]!='-')i++;
+			if(str[j]!=' ')i++;
 		}
 		//输出单词大小
 		printf("%d ", --i);
 		//重新初始化str
 		for (int i = 0; i < number; i++) {
-			str[i]='-';
+			str[i]=' ';
 		}
 
 }
