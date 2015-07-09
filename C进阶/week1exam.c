@@ -50,17 +50,21 @@
 
 */
 #include <stdio.h>
-int main() {
-  //定义小数的一维数组
-  int xiaoshu[200];
-  //定义被除数a，除数b
-  int a,b;
-  int num=0;
+void count(int xiaoshu[],int a,int b,int *num);//循环计算小数
+void prt(int xiaoshu[],int *num);  //输出小数
 
+int main() {
+  int xiaoshu[200];  //定义小数的一维数组
+  int a,b;  //定义被除数a，除数b
+  int num=0;//定义小数个数num
 
   scanf("%d/%d",&a,&b );
-  //printf("%d/%d\n",a,b );
-  //循环计算小数
+  count(xiaoshu,a,b,&num);
+  prt(xiaoshu,&num);
+  return 0;
+}
+
+void count(int xiaoshu[],int a,int b,int *num){
   for (int i = 0; i<200; i++) {
 
     a=a*10;
@@ -68,14 +72,13 @@ int main() {
     xiaoshu[i]=a/b;
     a=a%b;
     //printf("%d\n",a );
-    num++;
+    *num=*num+1;
   }
-
-  //输出小数
+}
+void prt(int xiaoshu[],int *num){
   printf("0.");
-  for(int i=0;i<num;i++){
+  for(int i=0;i<*num;i++){
     printf("%d",xiaoshu[i] );
   }
   printf("\n");
-  return 0;
 }
