@@ -1,5 +1,6 @@
 /*
 指针应用1：返回多值
+函数参数中的数组实际是指针
 */
 #include "stdio.h"
 void minmax(int a[],int len,int *min,int*max);
