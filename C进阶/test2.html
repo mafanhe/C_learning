@@ -1,0 +1,33 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title> new document </title>
+<style type="text/css">
+.avb {
+    background-color: #99ffff;
+}
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+var temptr = $();
+$(function(){
+    $("#tableid").on("click","tr",function(event){
+        temptr.removeClass("avb");
+        temptr = $(this);
+        temptr.addClass("avb")
+    });
+});
+</script>
+</head>
+<body>
+<table id="tableid">
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+    <tr><td>111</td><td>222</td><td>333</td></tr>
+</table>
+</body>
+</html>

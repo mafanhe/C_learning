@@ -1,0 +1,27 @@
+<html>
+<head>
+<style>
+.banner { background: #0094ff; }
+.bannerOver { background: #808080; }
+.cur { background: #ff6a00; }
+</style>
+<script>
+$(function () {
+$('#menu_title').find('dd').click(function () {
+$('#menu_title').find('dd').removeClass('cur');
+$(this).addClass('cur');
+})
+})
+</script>
+</style>
+<body>
+<dl id="menu_title">
+<dt>人</dt>
+<dd>一种高级动物</dd>
+<dt>狗</dt>
+<dd>人类的朋友</dd>
+<dt>猫</dt>
+<dd>猫科动物的祖先</dd>
+</dl>
+</body>
+</html>
